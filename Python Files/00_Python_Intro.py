@@ -13,8 +13,8 @@ We'll be looking at:
 
 Each of these python files will be follow-along programming projects written in pseudocode.
 
-Pseudocode is what a lot of your projects will look like in your courses. They're basic english instructions that provide
-a direction for your python programming.
+Pseudocode is what a lot of your projects will look like in your courses.
+They're basic english instructions that provide a direction for your python programming.
 
 A quick example of this would be
 
@@ -29,6 +29,24 @@ Python Code:
 classroom_a = 15
 classroom_b = 25
 total_students = classroom_a + classroom_b
+
+Let's talk about some of the code you'll see below. 
+
+First, we have def main(): -- This is defining our main function, which in basic terms is how we execute/start our code.
+We'll be learning more about functions later but I remember seeing it when I was first starting and no one
+bothered to explain it. 
+
+In our def main(), we can see everything is indented one tab in. Python is picky about indentation and when writing
+our function body they need to be indented. We'll be doing some small editing to the main program below.
+
+Finally, we have what's known as the main guard. 
+if __name__ == '__main__'
+    main()
+
+The main guard is useful when you start having multiple files that contain main functions. It lets
+your computer execute the main function when you run the Python script instead of when you import into 
+another file. It might be confusing now but think of it as part of a template to your Python file, you'll 
+usually always have it.
 '''
 
 def main():
@@ -58,9 +76,10 @@ def main():
     '''
     # Let's add some integers together to get the sum of two numbers!
     # Make two variables below called number1 and number2, assign them some integer values and let's get their sum.
+
     # We'll start the first one for you!
     number1 =  
-
+    # Now make the number2 variable below
 
     print("*************")
     print("The sum is:", (number1 + number2))
