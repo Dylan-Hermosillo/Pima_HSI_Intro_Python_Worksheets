@@ -1,0 +1,70 @@
+import math, random
+
+def chases(predator, prey):
+    '''
+    This function prints the predator chases a prey
+
+    Parameters:
+    predator: a string variable for predator
+    prey: a string variable for prey
+
+    Returns: None
+    '''
+    print('The',predator,'chases the',prey)
+    
+def sum3(x, y, z):
+    '''
+    This function takes three numerical arguments and prints their sum.
+    
+    Parameters:
+    x, y, z: numerical integers
+    
+    Returns: None'''
+
+    print('The sum of the arguments is:', (x+y+z))
+
+def forecast():
+    '''
+    This function prints out a forecast of rain randomly between 0-100%
+
+    Parameters: None
+
+    Returns: None
+    '''
+    print('Chance of rain today:', random.randrange(101),'%')
+
+def radians(angle):
+    '''
+    This function takes an argument for an angle in degrees and converts it to radians
+
+    Parameters
+    angle: a numerical integer representing degrees to be converted to radians
+
+    Returns: None
+    '''
+    radians = round((angle * (math.pi / 180)), 3)
+    print('The angle in radians is:', radians)
+
+def decimal(float):
+    '''
+    This function takes a float and subtracts the floor
+    
+    Parameters:
+    float: the decimal parameter to be floor-subtracted
+    
+    Returns: None'''
+    
+    print('Decimal part:', round((float - math.floor(float)), 3))
+
+def erf_plus_gamma(num):
+    '''
+    This function takes a number and print the error function plus gamma function
+    
+    Parameters
+    num: float number to run math formulas on
+    
+    Returns: None'''
+    
+    sum_val = round(((math.erf(num) + math.gamma(num))), 3)
+    print('Result:', sum_val)
+
