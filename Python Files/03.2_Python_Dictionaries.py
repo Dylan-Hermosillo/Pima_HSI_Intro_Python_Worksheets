@@ -36,5 +36,44 @@ def main():
     - removing a value to a specific key
     '''
 
+    # Let's create a dictionary! They use curly braces {}
+    # Remember we use Key:Value to add information
+    # Notice on the courses we're using a list, if we want multiple
+    #   values in the same key we need them in their own container. 
+    student_dict = {'student_Number': 123654, 'student_major': 'Programming',
+                    'student_gpa': 3.5, 'student_courses': ['CIS129', 'MAT151']} 
+
+    # We'll now access a few elements within the dictionary.
+    # First, lets get the student's major
+    print("Student's Major:",student_dict['student_major'])
+    # What about their courses?
+    print("Student's Courses:",student_dict['student_courses'])
+    # What if we want to view just the first course?\
+    # Notice we just index the list within the dictionary 
+    print("Student's First Course:",student_dict['student_courses'][0])
+
+    print('-----'*10)
+    # Now let's add another category, their birthday.
+    student_dict['student_birthday'] = '01/01/2000' # notice we just index the new key and add a value to it
+    print('Updated Dictionary:',student_dict)
+
+    print('-----'*10)
+    # We probably shouldn't have personal information on here. Let's remove that K:V pair.
+    del(student_dict['student_birthday'])
+    print(student_dict)
+
+    print('-----'*10)
+    # Let's add a final class to the student's course key.
+    # Since we're just using a list within the dictionary we'll use the same append() function.
+    student_dict['student_courses'].append('CIS136')
+    print('Updated Dictionary:', student_dict)
+
+    print('-----'*10)
+    # Our student is no longer in MAT151, so we should remove it.
+    student_dict['student_courses'].remove('MAT151')
+    print('Updated Dictionary:', student_dict)
+
+
+
 if __name__ == '__main__':
     main()
